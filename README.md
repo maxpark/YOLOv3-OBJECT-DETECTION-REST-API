@@ -7,6 +7,14 @@ Django implementation for Webpage as well as REST API
 A web application that provides object detection using YOLOv3 and also generates REST API. It's implemented using Django framework and PyTorch (for YOLO model).
 I have developed Django API which accepts an image as request. The input image is converted to float32 type NumPy array and passed on to the YOLOv3 object detection model. The model performs object detection for the image and generates a JSON object with names of all the objects and their respective frequency in the image. The Response of the API is the JSON object.
 
+# Build Environment
+$ mkdir django
+$ cd django
+$ django-admin startproject testsite
+$ cd testsite
+$ python managy.py runserver
+
+
 # Required Libraries
 
 The libraries required along with thier version are mentioned below:
